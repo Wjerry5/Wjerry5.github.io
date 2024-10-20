@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" href="%sveltekit.assets%/favicon.png" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>CIKM'24 Tutorial - Efficient Temporal Graph Learning</title>
+		<link href="./output.css" rel="stylesheet">
+	</head>
+	<body>
+		<div style="display: contents">
+			<article class="prose lg:prose-xl prose-stone max-w-none">
+				<!-- I want this header to span the whole page and be grey -->
+				<div class="text-center w-screen bg-stone-100">
+					<div class="container mx-auto p-10 pt-16">
+					<h1>
+						CIKM'24 Tutorial: Towards Efficient Temporal Graph Learning: Algorithms, Frameworks, and
+						Tools
+					</h1>
+					<p class="text-center leading-7">
+						Ruijie Wang, Wanyu Zhao, Dachun Sun, Charith Mendis, and Tarek Abdelzaher<br />University of
+						Illinois Urbana-Champaign<br />Oct, 2024
+					</p>
+				</div>
+				</div>
+			</article>
+			<div class="container mx-auto p-10 pt-16">
+				<article class="prose lg:prose-xl prose-stone max-w-none">
+					<h2>Abstract</h2>
+					<p class="leading-8">
+						Temporal graphs capture dynamic node relations via temporal edges, finding extensive utility
+						in wide domains where time-varying patterns are crucial. Temporal Graph Neural Networks
+						(TGNNs) have gained significant attention for their effectiveness in representing temporal
+						graphs. However, TGNNs still face significant efficiency challenges in real-world
+						low-resource settings. First, from a data-efficiency standpoint, training TGNNs requires
+						sufficient temporal edges and data labels, which is problematic in practical scenarios with
+						limited data collection and annotation. Second, from a resource-efficiency perspective, TGNN
+						training and inference are computationally demanding due to complex encoding operations,
+						especially on large-scale temporal graphs. Minimizing resource consumption while preserving
+						effectiveness is essential. Inspired by these efficiency challenges, this tutorial
+						systematically introduces state-of-the-art <em>data-efficient</em> and
+						<em>resource-efficient</em> TGNNs, focusing on algorithms, frameworks, and tools, and discusses
+						promising yet under-explored research directions in efficient temporal graph learning. This tutorial
+						aims to benefit researchers and practitioners in data mining, machine learning, and artificial
+						intelligence.
+					</p>
+					<ul class="leading-5">
+						<li><strong>Time: TBD, Monday, October 21, 2024</strong><br></li>
+						<li><strong>Location: TBD, Boise Centre, Boise, Idaho, USA</strong><br></li>
+						<li><strong>Slides: [<a href="#">Download (coming soon)</a>]</strong></li>
+					</ul>
+					<h2>Outline</h2>
+					<ul class="leading-5">
+						<li>
+							Part I: Introduction
+							<ul>
+								<li>Background and Motivations</li>
+								<li>Problem Definitions and Settings</li>
+							</ul>
+						</li>
+						<li>
+							Part II: Data-Efficient Temporal Graph Learning
+							<ul>
+								<li>Key Challenges of Data-Efficient TGNNs</li>
+								<li>Self-Supervised Temporal Graph Learning</li>
+								<li>Weakly-Supervised Temporal Graph Learning</li>
+								<li>Few-Shot Temporal Graph Learning</li>
+							</ul>
+						</li>
+						<li>
+							Part III: Resource-Efficient TGNNs
+							<ul>
+								<li>Key Challenges of Resource-Efficient TGNNs</li>
+								<li>Efficient Discrete-Time TGNN Frameworks</li>
+								<li>Efficient Continuous-Time TGNN Frameworks</li>
+								<li>Efficient Distributed TGNN Training Frameworks</li>
+							</ul>
+						</li>
+						<li>
+							Part IV: Open Questions and Challenges
+							<ul>
+								<li>Generative Pre-training on Temporal Graphs</li>
+								<li>Distributed Training on Temporal Graphs</li>
+							</ul>
+						</li>
+					</ul>
+					<h3>Presenters</h3>
+					<div class="flex gap-10">
+						<div class="flex-initial">
+							<img src="assets/ruijie.jpg" alt="Ruijie Wang" class="rounded-lg not-prose w-48 m-0" />
+						</div>
+						<div class="flex-1 prose-base">
+							<strong>Ruijie Wang</strong> is a Postdoctoral Research Associate at the Department of Computer
+							Science, the University of Illinois at Urbana Champaign. He received his Ph.D. in Computer
+							Science from the University of Illinois at Urbana-Champaign. His research interests lie in
+							deep graph learning algorithms for real-world graphs at scale to understand the underlying
+							dynamic patterns and predict future knowledge. He is also generally interested in machine learning
+							and deep learning on graphs, natural language, and time-series data, with applications on social
+							network analysis, knowledge graph, and dynamic systems. He has published more than 30 papers
+							in refereed international conferences and journals including NeurIPS, WWW, ACL, SIGIR, AAAI,
+							CIKM, SenSys, etc.
+						</div>
+					</div>
+					<div class="my-5 h-0.5 border-t-0 bg-neutral-200 dark:bg-white/10"></div>
+					<div class="flex gap-10">
+						<div class="flex-initial">
+							<img src="assets/wanyu.jpg" alt="Wanyu Zhao" class="rounded-lg not-prose w-48 m-0" />
+						</div>
+						<div class="flex-1 prose-base">
+							<strong>Wanyu Zhao</strong> is a first-year Ph.D. student in Computer Science at the University
+							of Illinois Urbana-Champaign (UIUC). Her current research focuses on developing efficient and
+							scalable systems for temporal graph learning. With an interest in the intersection of systems
+							and machine learning, she aims to explore novel techniques in constructing efficient AI systems
+							through algorithmic insights and comprehensive systems understanding. She is also interested
+							in the application of machine learning to enhance system performance.
+						</div>
+					</div>
+					<div class="my-5 h-0.5 border-t-0 bg-neutral-200 dark:bg-white/10"></div>
+					<div class="flex gap-10">
+						<div class="flex-initial">
+							<img src="assets/dachun.jpg" alt="Dachun Sun" class="rounded-lg not-prose w-48 m-0" />
+						</div>
+						<div class="flex-1 prose-base">
+							<strong>Dachun Sun</strong> is a senior Ph.D. student in Computer Science at the University
+							of Illinois at Urbana-Champaign (UIUC). His research focuses on computational social analysis
+							with deep graph learning and large language models. Main topics include social network data
+							mining and multimodal embedding for social data. Additionally, his academic interests extend
+							to natural language processing, knowledge graphs, and diffusion-based methods on graphs. He
+							has a dozen of published papers at renowned international conferences and journals including
+							TPAMI, NeurIPS, WWW, AAAI, SIGIR, and more.
+						</div>
+					</div>
+					<div class="my-5 h-0.5 border-t-0 bg-neutral-200 dark:bg-white/10"></div>
+					<div class="flex gap-10">
+						<div class="flex-initial">
+							<img src="assets/charith.jpg" alt="Charith Mendis" class="rounded-lg not-prose w-48 m-0" />
+						</div>
+						<div class="flex-1 prose-base">
+							<strong>Charith Mendis</strong> is an Assistant Professor at the University of Illinois at
+							Urbana-Champaign. Previously, he was a visiting faculty researcher at Google and was instrumental
+							in designing and developing the learned TPU cost model used in production. His research interests
+							are in automating compiler construction and in building high-performance ML systems. He received
+							his Ph.D. and Masters from the Massachusetts Institute of Technology and his B.Sc. from the
+							University of Moratuwa. He recently co-led the DARPA ISAT study on "ML Optimized Compilers
+							for Heterogeneous Architectures (MOCHA)". He is the recipient of an NSF CAREER Award, an IEEE
+							Micro Top Picks honorable mention, the William A. Martin outstanding master's thesis award
+							at MIT, a best student paper award, a best paper award, and the university gold medal for his
+							B.Sc. He has published work at both top programming languages venues such as PLDI and ASPLOS
+							as well as at top machine learning venues such as ICML and NeurIPS.
+						</div>
+					</div>
+					<div class="my-5 h-0.5 border-t-0 bg-neutral-200 dark:bg-white/10"></div>
+					<div class="flex gap-10">
+						<div class="flex-initial">
+							<img src="assets/tarek.jpg" alt="Tarek Abdelzaher" class="rounded-lg not-prose w-48 m-0" />
+						</div>
+						<div class="flex-1 prose-base">
+							<strong>Tarek Abdelzaher</strong> is a Professor and Willett Faculty Scholar at the Department
+							of Computer Science, the University of Illinois at Urbana Champaign. He received his Ph.D.
+							in Computer Science from the University of Michigan in 1999. He has authored/coauthored more
+							than 300 refereed publications in real-time computing, CPS/IoT, distributed systems, intelligent
+							networked sensing, machine learning, and control. He served as Editor-in-Chief of the Journal
+							of Real-Time Systems for 20 years, and as Associate Editor of the IEEE Transactions on Mobile
+							Computing, IEEE Transactions on Parallel and Distributed Systems, IEEE Embedded Systems Letters,
+							the ACM Transaction on Sensor Networks, ACM Transactions on Internet Technology, ACM Transactions
+							on Internet of Things, and the Ad Hoc Networks Journal. He chaired (as Program or General Chair)
+							several conferences in his area including RTAS, RTSS, IPSN, Sensys, DCoSS, ICDCS, Infocom,
+							and ICAC. Abdelzaher's research interests lie broadly in understanding and influencing performance
+							and temporal properties of networked embedded, social, and software systems in the face of
+							increasing complexity, distribution, and degree of interaction with an external physical environment.
+							He is a recipient of the IEEE Outstanding Technical Achievement and Leadership Award in Real-time
+							Systems (2012), the Xerox Award for Faculty Research (2011), as well as several best paper
+							awards. He is a fellow of ACM and IEEE.
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</body>
+</html>
